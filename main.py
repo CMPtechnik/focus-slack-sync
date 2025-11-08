@@ -16,7 +16,6 @@ STATUS_MAP = {
     "Off": {"text": "", "emoji": ""}  # clears status
 }
 
-
 async def set_slack_status(text: str, emoji: str):
     async with httpx.AsyncClient() as client:
         response = await client.post(
