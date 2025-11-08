@@ -10,9 +10,9 @@ SLACK_TOKEN = os.environ.get("SLACK_TOKEN")
 SLACK_API_URL = "https://slack.com/api/users.profile.set"
 
 STATUS_MAP = {
-    "Work": {"text": "Deep Work", "emoji": ":focus:"},
-    "Personal": {"text": "Personal Time", "emoji": ":palm_tree:"},
-    "Sleep": {"text": "Sleeping", "emoji": ":zzz:"},
+    "Work": {"text": "Deep Work 🧠", "emoji": ":brain:"},
+    "Personal": {"text": "Personal Time 🌴", "emoji": ":palm_tree:"},
+    "Sleep": {"text": "Sleeping 😴", "emoji": ":zzz:"},
     "Off": {"text": "", "emoji": ""}  # clears status
 }
 
