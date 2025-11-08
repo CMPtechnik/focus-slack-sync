@@ -19,13 +19,16 @@ STATUS_MAP = {
 
 async def set_slack_status(text: str, emoji: str):
     async with httpx.AsyncClient() as client:
-        await client.post(
+        response = await client.post(
             SLACK_API_URL,
-            headers={"Authorization": f"Bearer {SLACK_TOKEN}",
-                     "Content-Type": "application/json"},
+            headers={
+                "Authorization": f"Bearer {SLACK_TOKEN}",
+                "Content-Type": "application/json"
+            },
             json={"profile": {"status_text": text, "status_emoji": emoji}}
         )
-
+        print("Slack response:", response.status_code, response.text)
+        return response.json()
 
 @app.get("/health")
 async def health():
