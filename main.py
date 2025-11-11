@@ -11,9 +11,9 @@ SLACK_API_URL = "https://slack.com/api/users.profile.set"
 
 STATUS_MAP = {
     "Work": {"text": "Deep Work 🧠", "emoji": ":brain:"},
-    "Personal": {"text": "Personal Time 🌴", "emoji": ":palm_tree:"},
-    "Sleep": {"text": "Sleeping 😴", "emoji": ":zzz:"},
+    "Golf": {"text": "Playing Golf ⛳️", "emoji": ":flag_in_hole:"},  
     "Driving": {"text": "Driving 🚙", "emoji": ":blue_car:"},
+    "Home": {"text": "Remote Work 🏡", "emoji": ":house:"},
     "Off": {"text": "", "emoji": ""}  # clears status
 }
 
