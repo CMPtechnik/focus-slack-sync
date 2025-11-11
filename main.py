@@ -13,7 +13,7 @@ STATUS_MAP = {
     "Work": {"text": "Deep Work 🧠", "emoji": ":brain:"},
     "Personal": {"text": "Personal Time 🌴", "emoji": ":palm_tree:"},
     "Sleep": {"text": "Sleeping 😴", "emoji": ":zzz:"},
-    "Commuting": {"text": "Commuting 🚙", "emoji": ":blue_car:"},
+    "Driving": {"text": "Driving 🚙", "emoji": ":blue_car:"},
     "Off": {"text": "", "emoji": ""}  # clears status
 }
 
